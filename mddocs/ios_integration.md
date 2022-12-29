@@ -65,14 +65,14 @@ Next, you will see how to use Firebase Realtime Database and start Banuba Video 
    Import ```GoogleService-Info.plist``` file into your project. [Read more](https://firebase.google.com/docs/ios/setup#add-config-file).  
    Create new database and snapshot for storing token. As a result you will have a pair - database url(```targetURL``` i.e. *"https://...-default-rtdb.europe-west1.firebasedatabase.app/"*) and snapshot name(```tokenSnapshot``` i.e. *"banubaToken"*). These values will be used a bit later.<br></br>
 2. __Add dependency__  
-   Add ```BanubaTokenStorageSDK``` pod dependency in your [Podfile](https://github.com/Banuba/ve-sdk-flutter-integration-sample/blob/main/ios/Podfile)<br></br>
+   Add ```BanubaTokenStorageSDK``` pod dependency in your [Podfile](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/ios/Podfile)<br></br>
 3. __Add fallback token__  
    Add file ```BanubaVideoEditorSDK-Info.plist``` into your project and set Banuba Video Editor SDK token. 
    This token is used in case when it is not possible to obtain the token from the server.</br>
    [See example](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/ios/Runner/BanubaVideoEditorSDK-Info.plist)<br></br>
 4. __Set Firebase Database params__   
    Set ```targetURL``` and ```tokenSnapshot``` of your Firebase Database in ```FirebaseTokenProvider``` class.</br>
-   [See example](https://github.com/Banuba/ve-sdk-flutter-integration-sample/blob/main/ios/Runner/VideoEditorModuleWithTokenStorage.swift#L17)<br></br>
+   [See example](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/ios/Runner/VideoEditorModuleWithTokenStorage.swift#L17)<br></br>
 5. __Usage__  
    Set ```true``` to ```useBanubaTokenStorage``` in [AppDelegate](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/ios/Runner/AppDelegate.swift#L26) to enable Token Storage. 
    Use fetched token to initialize and start Video Editor SDK.  
