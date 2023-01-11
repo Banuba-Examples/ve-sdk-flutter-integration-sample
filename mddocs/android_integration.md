@@ -36,7 +36,7 @@ The following steps help to complete basic integration into your Flutter project
 
    Add Video Editor SDK dependencies in app gradle file.
     ```groovy
-        def banubaSdkVersion = '1.25.1.4'
+        def banubaSdkVersion = '1.26.3'
         implementation "com.banuba.sdk:ffmpeg:4.4"
         implementation "com.banuba.sdk:camera-sdk:${banubaSdkVersion}"
         implementation "com.banuba.sdk:camera-ui-sdk:${banubaSdkVersion}"
@@ -129,7 +129,7 @@ The following steps help to complete basic integration into your Flutter project
 
 11. __Custom Audio Browser experince__ </br>
     Video Editor SDK allows to implement your experience of providing audio tracks for your users - custom Audio Browser.  
-    To check out the simplest experience on Flutter you can set ```true``` to [USE_CUSTOM_AUDIO_BROWSER](https://github.com/Banuba/ve-sdk-flutter-integration-sample/blob/main/android/app/src/main/kotlin/com/banuba/flutter/flutter_ve_sdk/SampleApp.kt#L12)
+    To check out the simplest experience on Flutter you can set ```true``` to [USE_CUSTOM_AUDIO_BROWSER](https://github.com/Banuba/ve-sdk-flutter-integration-sample/blob/main/android/app/src/main/kotlin/com/banuba/flutter/flutter_ve_sdk/SampleApp.kt#L15)
 
    
 ## What is next?
