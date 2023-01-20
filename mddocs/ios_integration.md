@@ -7,11 +7,10 @@ of your Flutter project using native iOS development process.
 The following steps help to complete basic integration into your Flutter project.
 
 <ins>All changes are made in **ios** directory.</ins>
-1. __Set Banuba Video Editor SDK token__  
-   Set Banuba token in the sample app [AppDelegate](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/ios/Runner/AppDelegate.swift#L23).<br></br>
-   To get access to your trial, please, get in touch with us by [filling a form](https://www.banuba.com/video-editor-sdk) on our website. Our sales managers will send you the trial token.<br>
-   :exclamation: The token **IS REQUIRED** to run sample and an integration in your app.  
-   Check this [guide](#Obtain-Banuba-Video-Editor-SDK-token-from-a-server) to store and obtain a token from a server.<br></br>
+1. __Use your license token__  
+   Set Banuba license token [within the app](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/ios/Runner/AppDelegate.swift#L15).<br></br>
+
+   :exclamation: The token **IS REQUIRED** to run sample and an integration in your app.
 
 2. __Add Banuba Video Editor SDK dependencies__  
    Add iOS Video Editor SDK dependencies to your Podfile.</br>
@@ -23,10 +22,10 @@ The following steps help to complete basic integration into your Flutter project
 
 4. __Setup platform channel to start Video Editor SDK__  
    Create ```FlutterMethodChannel``` in your ```AppDelegate``` instance to start ```VideoEditorModule```.</br>
-   [See example](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/ios/Runner/AppDelegate.swift#53)</br>
+   [See example](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/ios/Runner/AppDelegate.swift#54)</br>
    Find more information about platform channels in [Flutter developer documentation](https://docs.flutter.dev/development/platform-integration/platform-channels).</br><br>
 
-5. __Add assets and resources__  
+5. __Add assets and resources__
    1. [bundleEffects](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/tree/main/ios/bundleEffects) to use build-in Banuba AR effects. Using Banuba AR requires [Face AR product](https://docs.banuba.com/face-ar-sdk-v1). Please contact Banuba Sales managers to get more AR effects.
    2. [luts](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/tree/main/ios/luts) to use Lut effects shown in the Effects tab.</br><br>
 
@@ -42,15 +41,14 @@ The following steps help to complete basic integration into your Flutter project
          }
       }
    ```
-   [See example](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/lib/main.dart#L57)</br>
-   
+   [See example](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/lib/main.dart#L69)</br>
 7. __Connect Mubert to Video Editor Audio Browser__ </br>
    :exclamation: Please request API key from Mubert. <ins>Banuba is not responsible for providing Mubert API key.</ins><br></br>
-   Set Mubert API key in [AudioBrowser initializer](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/ios/Runner/AppDelegate.swift#L116) to play [Mubert](https://mubert.com/) content in Video Editor Audio Browser.<br></br>
+   Set Mubert API key in [AudioBrowser initializer](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/ios/Runner/AppDelegate.swift#L18) to play [Mubert](https://mubert.com/) content in Video Editor Audio Browser.<br></br>
 
 8. __Custom Audio Browser experince__ </br>
-    Video Editor SDK allows to implement your experience of providing audio tracks for your users - custom Audio Browser.  
-    To check out the simplest experience on Flutter you can set ```true``` to [useCustomAudioBrowser](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/ios/Runner/AppDelegate.swift#L20)
+   Video Editor SDK allows to implement your experience of providing audio tracks for your users - custom Audio Browser.  
+   To check out the simplest experience on Flutter you can set ```true``` to [useCustomAudioBrowser](https://github.com/Banuba-Examples/ve-sdk-flutter-integration-sample/blob/main/ios/Runner/AppDelegate.swift#L12)
 
 ## What is next?
 
